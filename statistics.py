@@ -1,3 +1,7 @@
-
+import math
 def calculateStats(numbers):
-  return None
+  return {
+    "avg" : math.nan,
+    "max" : math.nan,
+    "min" : math.nan
+  }
