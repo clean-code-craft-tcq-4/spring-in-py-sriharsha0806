@@ -6,11 +6,7 @@ def calculateStats(nums):
     except:
         ans["avg"] = math.nan
     
-    ans["max"] = max(nums)
+    ans["max"] = max(nums) if len(nums) != 0 else math.nan
     
-    ans["min"] = min(nums)
-    return ans if ans["avg"] != math.nan else {
-        "avg":math.nan,
-        "min":math.nan,
-        "max":math.nan
-    }
+    ans["min"] = min(nums) if len(nums) != 0 else math.nan
+    return ans 
