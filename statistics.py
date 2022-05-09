@@ -9,4 +9,8 @@ def calculateStats(nums):
     ans["max"] = max(nums)
     
     ans["min"] = min(nums)
-    return ans
+    return ans if ans["avg"] != math.nan else {
+        "avg":math.nan,
+        "min":math.nan,
+        "max":math.nan
+    }
