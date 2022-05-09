@@ -1,7 +1,7 @@
 import math
-def calculateStats(numbers):
+def calculateStats(nums):
   return {
-    "avg" : math.nan,
-    "max" : math.nan,
-    "min" : math.nan
+    "avg" : sum(nums)/len(nums),
+    "max" : max(nums),
+    "min" : min(nums)
   }
