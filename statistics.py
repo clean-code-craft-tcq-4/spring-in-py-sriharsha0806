@@ -6,10 +6,7 @@ def calculateStats(nums):
     except:
         ans["avg"] = math.nan
     
-    try:
-        ans["max"] = max(nums)
-    except:
-        ans["max"] = math.nan
+    ans["max"] = max(nums)
     
     try:
         ans["min"] = min(nums)
