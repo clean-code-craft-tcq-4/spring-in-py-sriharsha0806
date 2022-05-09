@@ -8,8 +8,5 @@ def calculateStats(nums):
     
     ans["max"] = max(nums)
     
-    try:
-        ans["min"] = min(nums)
-    except:
-        ans["min"] = math.none
+    ans["min"] = min(nums)
     return ans
